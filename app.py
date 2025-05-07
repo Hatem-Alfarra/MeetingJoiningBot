@@ -7,13 +7,9 @@ import time
 
 # Zoom link - force browser join
 input_zoom_url = input("Zoom URL:  ")
-# https://us05web.zoom.us/j/87021818655?pwd=MnABnZ7hiHHkIEa0mEC8IBRshD6Iwx.1
-# zoom_url = "https://us05web.zoom.us/wc/join/87021818655?pwd=MnABnZ7hiHHkIEa0mEC8IBRshD6Iwx.1&prefer=1"
 
 input_zoom_url_fst_mod = input_zoom_url.replace("/j/", "/wc/join/")
 zoom_url = input_zoom_url_fst_mod + "&prefer=1"
-
-# print(zoom_url)
 
 options = Options()
 options.add_argument("--use-fake-ui-for-media-stream")
