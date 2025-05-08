@@ -5,7 +5,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-# Zoom link - force browser join
+# Zoom link. Instead of taking it from console I would want to figure out a way to grab a zoom meeting url from a
+# calendar
 input_zoom_url = input("Zoom URL:  ")
 
 input_zoom_url_fst_mod = input_zoom_url.replace("/j/", "/wc/join/")
